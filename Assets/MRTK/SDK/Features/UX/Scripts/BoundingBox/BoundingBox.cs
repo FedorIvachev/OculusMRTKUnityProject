@@ -1869,8 +1869,8 @@ namespace Microsoft.MixedReality.Toolkit.UI
 
         private void ExtractBoundsCorners(Transform childTransform, BoundsCalculationMethod boundsCalculationMethod)
         {
-            KeyValuePair<Transform, Collider> colliderByTransform = new KeyValuePair<Transform, Collider>();
-            KeyValuePair<Transform, Bounds> rendererBoundsByTransform = new KeyValuePair<Transform, Bounds>();
+            KeyValuePair<Transform, Collider> colliderByTransform = default;
+            KeyValuePair<Transform, Bounds> rendererBoundsByTransform = default;
 
             if (boundsCalculationMethod != BoundsCalculationMethod.RendererOnly)
             {
